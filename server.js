@@ -9,22 +9,7 @@ const port = 4011;
 let db;
 
 function handleDisconnect() {
-  db = mysql.createPool({
-    connectionLimit: 1000,
-    host: 'sql12.freesqldatabase.com',
-    user: 'sql12706859',
-    password: 'sElwkdMRic', 
-    database: 'sql12706859',
-    port: 3306
-  });
-  db.getConnection((err, connection) => {
-    if (err) {
-      console.error('Error connecting to database:', err);
-      return;
-    }
-    console.log('Connected to database');
-    connection.release();
-  });
+  // Get The DatabaseConnection HERE>>>>>
 
 }
 
