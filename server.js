@@ -34,17 +34,11 @@ app.get('/', (req, res) => {
 const transporter = nodemailer.createTransport({
   service: 'gmail', // Use your email service (e.g., Gmail, Outlook, etc.)
   auth: {
-    user: 'gcedpihelpdesk@gcedpi.edu.in', // Replace with your email
-    pass: 'qgbw ajtt ehnn finx', // Replace with your email password or app password
+    user: '123@gmail.com', // Replace with your email
+    pass: '123', // Replace with your email password or app password
   },
 });
 
-/**
- * Function to send an email to a client
- * @param {string} from - The sender's email address
- * @param {Array<string>} mail - List of recipient email addresses
- * @param {string} message - The message body of the email
- */
 const sendMailToClient = async (from, mail,subject, message) => {
     const emailSubject = subject; // You can modify or parameterize the subject if needed
   
